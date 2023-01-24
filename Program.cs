@@ -11,3 +11,15 @@ int FindSize(string[] array){
   }
   return size;
 }
+
+string[] CreateArray(string[] array, int size){
+  int j=0;
+string[] resultArray = new string[size];
+    for(int i = 0; i < array.Length; i++){
+      if(array[i].Length < 4 ){
+      resultArray[j] = array[i];        
+       j++;
+      }    
+    }   
+  return resultArray;
+}
