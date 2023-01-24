@@ -23,3 +23,18 @@ string[] resultArray = new string[size];
     }   
   return resultArray;
 }
+
+void ShowArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write($"{array[i]} ");
+    }
+}
+
+       
+
+    int size = FindSize(array);
+    Console.Write("new array is [ ");
+    ShowArray(CreateArray(array, size));
+    Console.Write("]");
